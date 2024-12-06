@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4x4 Tic Tac Toe</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="mode-buttons">
+      <button id="human-vs-human" class="mode-button active">Human vs Human</button>
+      <button id="human-vs-ai" class="mode-button">Human vs AI</button>
+    </div>
+    <div id="turn-indicator" class="turn-indicator">Player 1's TURN</div>
+    <div class="game-board" id="game-board"></div>
+    <div class="scoreboard">
+      <div>X (You): <span id="score-x">0</span></div>
+      <div>Ties: <span id="score-ties">0</span></div>
+      <div>O (CPU): <span id="score-o">0</span></div>
+    </div>
+    <button id="restart" class="restart-button">Restart</button>
+  </div>
+
+  <!-- Audio Files -->
+  <audio id="click-sound" src="./click.wav"></audio>
+  <audio id="button-sound" src="./button.wav"></audio>
+  <audio id="win-sound" src="./win.wav"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
